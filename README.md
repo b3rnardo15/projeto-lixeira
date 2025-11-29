@@ -409,16 +409,6 @@ Para dúvidas ou problemas:
 - [ ] Dashboard administrativo avançado
 - [ ] Relatórios automáticos por email
 
----
-
-## 📚 Documentação Adicional
-
-Veja a pasta `docs/` para:
-
-- [Setup Detalhado](./docs/setup.md)
-- [API Reference](./docs/api.md)
-- [Troubleshooting](./docs/troubleshooting.md)
-- [Deploy Guide](./docs/deployment.md)
 
 ---
 
