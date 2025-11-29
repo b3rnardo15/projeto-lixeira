@@ -9,17 +9,17 @@ from threading import Thread
 
 load_dotenv()
 
-# ========== CONFIGURAÇÕES THINGSPEAK ==========
+#  CONFIGURAÇÕES THINGSPEAK 
 THINGSPEAK_CHANNEL_ID = "3185970"  # Seu Channel ID
 THINGSPEAK_API_KEY = "9TTBK97R2SUBNYIN"  # Read API Key
 THINGSPEAK_BASE_URL = "https://api.thingspeak.com/channels"
 
-# ========== CONFIGURAÇÕES MONGODB ==========
+# CONFIGURAÇÕES MONGODB 
 MONGODB_URI = os.getenv('MONGODB_URI')
 DB_NAME = 'lixeira_inteligente'
 COLLECTION_NAME = 'leituras'
 
-# ========== CONFIGURAÇÕES INTEGRAÇÃO ==========
+#  CONFIGURAÇÕES INTEGRAÇÃO 
 INTERVALO_COLETA = 60  # A cada 60 segundos
 
 
@@ -186,7 +186,7 @@ class ThingSpeakIntegration:
             print("✅ MongoDB desconectado")
 
 
-# ========== INSTÂNCIA GLOBAL ==========
+# INSTÂNCIA GLOBAL
 thingspeak_integration = None
 
 
