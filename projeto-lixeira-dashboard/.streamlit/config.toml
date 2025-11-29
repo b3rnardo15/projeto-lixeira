@@ -1,0 +1,11 @@
+[server]
+port = 8501
+headless = true
+enableCORS = false
+
+[client]
+showErrorDetails = true
+showWarningOnDirectExecution = false
+
+[logger]
+level = "info"
