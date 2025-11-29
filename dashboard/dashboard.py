@@ -8,7 +8,7 @@ import os
 from dotenv import load_dotenv
 import certifi
 import requests
-from pytz import UTC
+from pytz import UTC 
 from reportlab.lib.pagesizes import letter, A4
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -110,7 +110,7 @@ def inicializar_sessao():
 
 inicializar_sessao()
 
-API_URL = "http://localhost:5000"
+API_URL = "https://projeto-lixeira.onrender.com"
 
 # ========== AUTENTICAÇÃO ==========
 def fazer_login(username: str, senha: str):
