@@ -1,4 +1,4 @@
-# ♻️ Lixeira Inteligente - Smart Waste Management System
+# ♻️ Lixeira Inteligente - Smart Bin
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![Flask](https://img.shields.io/badge/Flask-2.3.3-green)
