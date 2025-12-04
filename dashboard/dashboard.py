@@ -20,7 +20,7 @@ import csv
 load_dotenv()
 
 st.set_page_config(
-    page_title="Dashboard Lixeira v4.0",
+    page_title="Dashboard - SmartBin",
     page_icon="♻️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -136,7 +136,7 @@ def fazer_logout():
     st.session_state.mfa_secret = None
 
 def tela_login():
-    st.markdown("# ♻️ Lixeira Inteligente")
+    st.markdown("# ♻️ Dashboard - SmartBin")
     col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
@@ -161,8 +161,8 @@ def tela_login():
                 except Exception as e:
                     st.error(f"erro: {e}")
         else:
-            username = st.text_input("👤 usuario", placeholder="admin")
-            senha = st.text_input("🔑 senha", type="password", placeholder="admin123")
+            username = st.text_input("👤 usuario", placeholder="heurykteste")
+            senha = st.text_input("🔑 senha", type="password", placeholder="heuryk123")
             
             if st.button("📲 entrar", use_container_width=True):
                 sucesso, mensagem = fazer_login(username, senha)
@@ -173,7 +173,7 @@ def tela_login():
                     st.error(mensagem)
     
     st.markdown("---")
-    st.info("💡 demo: admin / admin123")
+    st.info("💡 demo: heurykteste / heuryk123")
 
 # ========== BUSCAR DADOS ==========
 @st.cache_data(ttl=10)
